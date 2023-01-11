@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--color-1);
+}
+
+:root{
+    --color-1: #04151f;
+    --color-white: #fff;
+}
+
+nav{
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+}
+
+.bg-color-1{
+    background: var(--color-1);
+}
+
+.text-color-1{
+    color:  var(--color-white);
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: var(--color-white);
+}
+
+.icon-white{
+    color: var(--color-white);
+}
+
+.imagen-2{
+    background-image: url("../images/imagen-inicio.png");
+}
+
+.inicio {
+    height: 95vh;
+    position: relative;
+}
+
+.inicio-imagen{
+    height: 100%;
+    background-size: cover;
+    box-sizing: border-box;
+    filter: blur(4px);
+}
+
+.card-perfil{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 5px 5px 100px var(--color-white);
+}
