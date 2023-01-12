@@ -1,41 +1,57 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: var(--color-1);
 }
 
-:root{
+:root {
     --color-1: #04151f;
+    --color-2: #FCBF49;
     --color-white: #fff;
+    --font-Inconsolata: 'Inconsolata', monospace;
 }
 
-nav{
+nav {
     font-family: 'Caveat', cursive;
     font-size: 1.5rem;
 }
 
-.bg-color-1{
+nav > li > a:hover {
+    background: #FCC;
+}
+
+.bg-color-1 {
     background: var(--color-1);
 }
 
-.text-color-1{
-    color:  var(--color-white);
+.text-color-white {
+    color: var(--color-white);
+}
+
+.text-color-2 {
+    color: var(--bs-warning);
+}
+
+.text-color-2:hover {
+    color: var(--color-2);
+    filter: brightness(85%);
+    transition: filter 0.25s;
+}
+
+.imagen-2 {
+    background-image: url("../images/imagen-inicio.png");
 }
 
 .custom-toggler.navbar-toggler {
     border-color: var(--color-white);
 }
 
-.icon-white{
+.icon-white {
     color: var(--color-white);
-}
-
-.imagen-2{
-    background-image: url("../images/imagen-inicio.png");
 }
 
 .inicio {
@@ -43,17 +59,68 @@ nav{
     position: relative;
 }
 
-.inicio-imagen{
+.inicio-imagen {
     height: 100%;
     background-size: cover;
     box-sizing: border-box;
     filter: blur(4px);
 }
 
-.card-perfil{
+.card-perfil {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     box-shadow: 5px 5px 100px var(--color-white);
 }
+
+.card-perfil-nombre {
+    font-family: var(--font-Inconsolata);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card-perfil-descripcion {
+    font-family: var(--font-Inconsolata);
+    font-weight: 600;
+}
+
+.contacto-datos-personales{
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.contacto-datos-personales-izquierda {
+    display: inline-block;
+    width: 20%;
+}
+
+.contenedor-intereses {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.interes {
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:5px
+}
+
+.interes-nombre span {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/*cambios en Bootstrap*/
+.nav-link:hover {
+    text-decoration: underline;
+}
+
